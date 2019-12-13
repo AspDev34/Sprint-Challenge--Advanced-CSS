@@ -11,18 +11,20 @@
 
 
 
-.btn_style(@bgColor, @width){
+.btn_style(@bgColor, @bdColor){
     display: block;
     background-color: @bgColor;
-    margin: 0 10px 20px;
-    width: @width;
+    // margin: 0 10px 20px;
+    border: 1px solid @bdColor;
     cursor: pointer;
     border-radius: 15px;
+    padding: 3% 6%;
+    
 }
 
-.btn {
-    .btn_style(yellow, 400px);
-    &:hover {
-        background-color: green;
-    }
-}
+// .btn {
+//     .btn_style(yellow, 400px);
+//     &:hover {
+//         background-color: green;
+//     }
+// }
