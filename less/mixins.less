@@ -1,1 +1,28 @@
 // Mixins Here
+.flexProps() {
+    display: flex;
+    justify-content: center;
+}
+
+.moreProps() {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.btn_style(@bgColor, @width){
+    display: block;
+    background-color: @bgColor;
+    margin: 0 10px 20px;
+    width: @width;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.btn {
+    .btn_style(yellow, 400px);
+    &:hover {
+        background-color: green;
+    }
+}
