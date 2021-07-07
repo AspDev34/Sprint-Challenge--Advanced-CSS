@@ -11,6 +11,12 @@
     p {
       padding:0 15px;
     }
+
+    @media @phone {
+      img {
+        width: 100%;
+      }
+    } 
   
   }
 
@@ -49,6 +55,9 @@
     .walk-text {
       width: 50%;
 
+      @media @phone {
+        width: 90%;
+      }
       h3 {
         margin-bottom: 10px;
       }
@@ -58,7 +67,17 @@
       }
 
       .btn {
-      }
+  
+        @media @phone {
+        
+        background-color: black;
+        color: white;
+        }
+      display: block;
+      text-align: center;
+      // width: 80px;
+      // height: 80px;
+      font-size: 2rem;
     }
 
     .walk-img {
@@ -73,3 +92,20 @@
     }
   }
 }// home
+
+.topPage {
+  .flexProps();
+  margin-bottom: 2%;
+  font-weight: bold;
+  font-family: 'Russo One', sans-serif;
+  
+}
+
+}
+
+.btn {
+  .btn_style(yellow, black);
+  &:hover {
+      background-color: green;
+  }
+}
